@@ -39,6 +39,7 @@ body {
 }
 
 .timer__controls form {
+  /* border: 2px solid red; */
   flex: 1;
   display: flex;
 }
@@ -80,4 +81,19 @@ body {
 .display__end-time {
   font-size: 4rem;
   color: white;
+}
+
+@media (max-width: 430px) {
+  .display__time-left {
+    font-weight: 100;
+    font-size: 12rem;
+    margin: 0;
+    color: white;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .timer__controls {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
